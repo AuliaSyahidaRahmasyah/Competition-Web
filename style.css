@@ -1,0 +1,505 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* Reset some default styles */
+body,
+h1,
+h2,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Header styles */
+header {
+    background-color: #021e41;
+    color: #fff;
+    text-align: center;
+    padding: 17px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+/* Teks responsif dalam header */
+header h1 {
+    font-size: 2rem;
+    margin: 0;
+    padding: 10px;
+}
+
+
+/* Navbar styles */
+nav {
+    background-color: #021b3b;
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav ul li a:hover {
+    background-color: #0077b6;
+    padding: 10px;
+    border-radius: 7px;
+}
+
+/* Kategori styling */
+.kategori {
+    text-align: center;
+    padding: 40px;
+    display: grid;
+    gap: 10px;
+}
+
+/* Box styling */
+.box {
+    background-color: #0077b6;
+    color: #fff;
+    padding: 20px;
+    margin: 3px;
+    text-align: center;
+}
+
+/* Style for top and bottom rows */
+.top-row,
+.bottom-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .kategori {
+        grid-template-columns: 1fr;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 20px;
+    }
+    
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .background-color {
+        text-align: center;
+    }
+}
+
+/* Button styles */
+.button {
+    display: block;
+    margin-top: 30px;
+    padding: 15px 30px;
+    background-color: #0077b6;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: #00ccff;
+}
+
+.book {
+    text-align: center;
+    background-color: #0077b6;
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+    margin-top: auto;
+    text-decoration: none;
+}
+
+.book:hover {
+    color: #021b3b;
+}
+
+/* Styles for .background-color */
+.background-color {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #19467E;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.background-color img {
+    margin-top: 130px;
+}
+
+/* Responsiveness
+@media (max-width: 450px) {
+    .beranda{
+
+    }
+} */
+
+
+
+
+
+
+.gallery {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+    width: 80%;
+    padding-left: 10%;
+}
+
+.image-container {
+    cursor: pointer;
+    transition: transform 0.2s;
+    margin: 5px;
+}
+
+.image-container:hover {
+    transform: scale(1.1);
+}
+
+.image {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    display: block;
+    margin: 0 auto;
+    max-width: 80%;
+    max-height: 80%;
+    margin-top: 70px;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+
+.faq {
+    padding: 20px;
+}
+
+.faq h2 {
+    text-align: center;
+}
+
+.faq-item {
+    margin: 10px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.faq-item:hover {
+    background-color: #f7f7f7;
+}
+
+.answer {
+    display: none;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+
+
+
+
+
+/* pemenang */
+
+
+.umum {
+    color: #003b6f;
+    text-align: center;
+    padding: 17px;
+    padding-top: 12%;
+}
+
+.semua {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 5px;
+}
+
+.semua h1 {
+    font-size: 28px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+/* Kotak profil styling */
+.profile-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.profile-box {
+    width: 175px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.profile-box img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+    object-fit: cover;
+}
+
+.profile-box h2 {
+    font-size: 20px;
+    color: #0077b6;
+    margin: 10px 0;
+}
+
+.profile-box p {
+    font-size: 16px;
+}
+
+.judul {
+    color: #140062;
+    text-align: center;
+    padding: 17px;
+    margin-top: 1%;
+}
+
+.menang {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 1200px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+}
+
+.announcement-box {
+    width: 30%;
+    margin: 8px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden;
+    text-align: center;
+    margin-left: 10px;
+}
+
+
+
+.announcement-box:hover {
+    transform: scale(1.05);
+}
+
+.winner-profile img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+    object-fit: cover;
+}
+
+.winner-info h2 {
+    font-size: 20px;
+    color: #0077b6;
+    margin: 10px 0;
+}
+
+.menang h2 {
+    font-size: 20px;
+    color: #0077b6;
+    margin-bottom: 10px;
+}
+
+.menang p {
+    font-size: 16px;
+}
+
+.seni{
+    width: 100%;
+    display: flex;
+    margin-bottom: 15px;
+}
+
+
+.senibox {
+    width: 28%;
+    height: 15%;
+    margin-left: 1.5rem;    
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden;
+    text-align: center;
+}
+
+
+.senibox:hover {
+    transform: scale(1.05);
+}
+
+.seni .box-full1 {
+    margin-right: 11rem;
+    margin-left: 1rem;
+}
+
+.full {
+    width: 150%;
+    height: 12%;
+    padding: 10px;
+    margin: 8px;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.full:hover {
+    transform: scale(1.05);
+}
+
+/* akhir pemenang */
+
+
+
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #0077b6;
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #1e00ff;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f0f0f0;
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-track:hover {
+    background-color: #ccc;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    background-color: #021E41;
+    color: #fff;
+    font-size: 15px;
+    padding: 20px;
+}
+
+.copy{
+    background-color: #021B3B;
+    padding: 10px 0;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.social-icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: #0077b6;
+    color: #fff;
+    border-radius: 50%;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 24px;
+    transition: background-color 0.2s ease;
+}
+
+.social-icon:hover {
+    background-color: #00C3F7;
+}

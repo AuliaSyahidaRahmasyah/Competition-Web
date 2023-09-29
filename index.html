@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Trinergy</title>
+    <link rel="icon" href="img/logo trinergy.png">
+</head>
+
+<body>
+    <header>    
+        <h1>Selamat Datang Di Trinergy 2024</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="#kategori">Kategori</a></li>
+            <li><a href="pemenang.html">Pemenang</a></li>
+            <li><a href="#faq">FAQ</a></li>
+        </ul>
+    </nav>
+
+    <div class="beranda">
+        <div class="background-color">
+            <img src="img/logo trinergy.png" alt="Gambar TRINERGY">
+            <a href="#" class="button">Masuk</a>
+            <a href="https://drive.google.com/file/d/1UM-nlOenXhAESKcNkQqSCCKLfmqaW2Gz/view?usp=sharing"
+                class="book">Unduh Guidebook</a>
+        </div>
+    </div>
+
+    <div class="gallery">
+        <div class="image-container">
+            <img src="img/digital.png" alt="Gambar 1" class="image" onclick="showImage('img/digital.png')">
+        </div>
+        <div class="image-container">
+            <img src="img/desain.png" alt="Gambar 2" class="image" onclick="showImage('img/desain.png')">
+        </div>
+        <div class="image-container">
+            <img src="img/tradisional.png" alt="Gambar 3" class="image" onclick="showImage('img/tradisional.png')">
+        </div>
+    </div>
+
+    <!-- Modal untuk memperbesar gambar -->
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <script src="script.js"></script>
+
+    <section class="kategori" id="kategori">
+        <h2>KATEGORI LOMBA</h2>
+        <p>Bergabunglah dengan kompetisi menarik kami dan tunjukkan keahlian Anda!</p>
+        <div class="boxes">
+            <div class="top-row">
+                <div class="box">CAPTURE THE FLAG</div>
+                <div class="box">WEB DESIGN</div>
+                <div class="box">UI UX DESIGN</div>
+                <div class="box">LOGIC COMPETITION</div>
+                <div class="box">MOBILE ROBOTIC</div>
+                <div class="box">PROGRAMMING CONTEST</div>
+            </div>
+            <div class="bottom-row">
+                <div class="box">ANIMASI 3D</div>
+                <div class="box">3D GAME ART</div>
+                <div class="box">DESIGN GRAFIS</div>
+                <div class="box">SENI TEATER INTERAKTIF</div>
+                <div class="box">SENI TARI DAN KOREOGRAFI</div>
+                <div class="box">SENI ILUSTRASI DAN KOMIK</div>
+            </div>
+        </div>
+    </section>
+
+    <div class="faq" id="faq">
+        <h2>FAQ ?</h2>
+        <div class="faq-item">
+            <div class="question" onclick="toggleAnswer(this)">Apa itu Trinergy Competition?</div>
+            <div class="answer">Trinergy merupakan salah satu wujud misi dan peran aktif Institut Computer Club dalam
+                mengikuti perkembangan teknologi dalam bidang IT melalui lomba SMA/ SMK sederajat Se-Indonesia.</div>
+        </div>
+        <div class="faq-item">
+            <div class="question" onclick="toggleAnswer(this)">Bagaimana cara mendaftar Trinergy?</div>
+            <div class="answer">Peserta dapat melakukan pendaftaran di website Trinergy yaitu <a
+                    href="https://forms.gle/QYnJgypHzvauXwNd6">https://forms.gle/QYnJgypHzvauXwNd6</a></div>
+        </div>
+        <div class="faq-item">
+            <div class="question" onclick="toggleAnswer(this)">Bagaimana cara mendapatkan panduan Techcomfest?</div>
+            <div class="answer">Peserta dapat mengunduh panduan yang telah disediakan di website techcomfest</div>
+        </div>
+        <div class="faq-item">
+            <div class="question" onclick="toggleAnswer(this)">Apakah boleh menggunakan satu akun email untuk mendaftar
+                dengan nama tim yang berbeda?</div>
+            <div class="answer">Ketika mendaftar, email yang digunakan adalah satu email untuk satu tim</div>
+        </div>
+        <div class="faq-item">
+            <div class="question" onclick="toggleAnswer(this)">Apa saja yang di dapatkan pemenang lomba techcomfest?
+            </div>
+            <div class="answer">Pemenang lomba Techcomfest akan mendapatkan uang pembinaan, piala, sertifikat</div>
+        </div>
+        <div class="faq-item">
+            <div class="question" onclick="toggleAnswer(this)">Apakah ada biaya pendaftaran lomba?</div>
+            <div class="answer">Biaya pendaftaran lomba Trinergy GRATIS !</div>
+        </div>
+        <div class="faq-item">
+            <div class="question" onclick="toggleAnswer(this)">Apakah boleh menggunakan satu akun email untuk mendaftar
+                dengan nama tim yang berbeda?</div>
+            <div class="answer">Ketika mendaftar, email yang digunakan adalah satu email untuk satu tim</div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="contact-info">
+            <p>Ikuti Media Sosial kami untuk info yang lebih terbaru tentang Trinergy</p>
+            <div class="social-media">
+                <a href="#" class="social-icon"><i class='bx bxl-facebook-square'></i></a>
+                <a href="#" class="social-icon"><i class='bx bxl-twitter'></i></a>
+                <a href="#" class="social-icon"><i class='bx bxl-instagram-alt'></i></a>
+                <a href="#" class="social-icon"><i class='bx bxl-linkedin-square'></i></a>
+            </div>
+        </div>
+        <br>
+        <p class="copy">&copy; 2024 Trinergy</p>
+    </footer>
+</body>
+
+</html>
